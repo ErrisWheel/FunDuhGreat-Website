@@ -1,0 +1,44 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #474647, #cacbcc);
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a8a8a8, #000000);
+}
+
+::-webkit-scrollbar-corner {
+  background: #111;
+}
+
+::-webkit-scrollbar-button:single-button {
+  background: #2b2b2b;
+  display: block;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:single-button {
+  background: #1a1a1a;
+  display: block;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:single-button:decrement {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23d4af37" d="M4 16l8-8 8 8zm0 6l8-8 8 8z"/></svg>') center no-repeat;
+  background-size: 16px;
+}
+
+::-webkit-scrollbar-button:single-button:increment {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23d4af37" d="M4 8l8 8 8-8zm0-6l8 8 8-8z"/></svg>') center no-repeat;
+  background-size: 16px;
+}
