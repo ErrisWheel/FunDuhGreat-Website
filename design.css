@@ -16,6 +16,113 @@ body {
   box-sizing: border-box;
 }
 
+/* side manu design */
+#side-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  z-index: 1000;
+  transition: left 0.3s ease;
+  padding-top: 20px;
+  box-shadow: 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#side-nav.show {
+  left: 0;
+}
+
+.show {
+  left: 0;
+}
+
+#side-nav .close-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+#side-nav ul {
+  list-style: none;
+  padding: 50px;
+}
+
+#side-nav ul li {
+  padding: 8px 16px;
+}
+
+#side-nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+#side-nav ul li a:hover {
+  background-color: #575757;
+}
+
+#side-nav {
+  z-index: 1001;
+}
+
+#main-content.side-nav-show {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+.menu-button {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.main-content.side-nav {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+/* para sa phones or other devices, honestly idk how to sabog na ako its 5:51 am ng feb 2, 2025*/
+@media (max-width: 768px) {
+  header {
+    padding: 30px 0;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .cta a {
+    padding: 8px 16px;
+  }
+
+  .lorem-text p {
+    font-size: 14px;
+  }
+
+  .side-nav {
+    width: 200px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
+
 /* topperwares */
 .container {
   width: 90%;
@@ -28,7 +135,7 @@ body {
 header {
   background-color: #1a1a1a;
   color: #fff;
-  padding: 50px 0;
+  padding: 20px 0;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -43,6 +150,11 @@ header h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
   font-weight: 700;
+  margin: 0;
+}
+
+header.hidden {
+  transform: translateY(-100%);
 }
 
 /* CTA */
