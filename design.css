@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
   margin-bottom: 100px;
   padding-bottom: 80px;
-  padding-top: 160px;
+  padding-top: 120px;
 }
 
 * {
@@ -190,6 +190,44 @@ header.hidden {
   color: #555;
   margin-bottom: 20px;
   line-height: 1.8;
+}
+
+/* What I Can Do section styles */
+#what-i-can-do {
+  padding-left: 50px;
+  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#what-i-can-do .title {
+  font-size: 32px;
+  font-weight: bold; /* Making the title bold */
+  color: #333;
+  text-align: left; /* Left-align the title */
+  margin: 0;
+}
+
+#what-i-can-do .description {
+  font-size: 18px;
+  color: #555;
+  margin: 20px 0;
+  text-align: justify; /* Justify the text */
+  text-indent: 20px; /* Indent the first line */
+}
+
+#what-i-can-do ul {
+  padding-left: 40px;
+  font-size: 18px;
+  color: #555;
+}
+
+#what-i-can-do ul li {
+  margin-bottom: 10px;
+}
+
+#what-i-can-do ul li strong u {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* footer scroll */
