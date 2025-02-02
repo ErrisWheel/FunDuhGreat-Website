@@ -29,14 +29,58 @@
             text-align: center;
             z-index: 1000;
         }
+
+        #side-nav {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            transition: left 0.3s ease;
+            z-index: 999;
+        }
+
+        .main-content {
+            transition: margin-left 0.3s ease;
+        }
+
+        #side-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #side-nav li {
+            padding: 10px;
+        }
+
+        #side-nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #side-nav a:hover {
+            background-color: #575757;
+        }
     </style>
     <link rel="stylesheet" href="design.css" type="text/css">
     <link rel="stylesheet" href="scrollwheel.css" type="text/css">
 </head>
 <body>
     <header>
-        <h1>FunDuhGreat</h1> <!-- Website Name -->
+        <h1>FunDuhGreat</h1>
+        <button id="menu-button" class="menu-button" onclick="toggleNavopen()">☰</button>
     </header>
+
+    <div id="side-nav" class="side-nav">
+        <button id="close-nav" class="menu-button" onclick="toggleNavclose()">☰</button>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
+    </div>
 
     <div style="padding-left: 50px;">
         <p style="font-family: Impact; font-size: 32px; color: black; margin: 0;">Del Rosario, Joshua Erris A.</p>
@@ -74,7 +118,6 @@
     </div>
 
     <div>
-        <!-- Content of your webpage -->
         <p>Scroll down to see the footer disappear. Scroll up to see it again!</p>
     </div>
 
@@ -85,6 +128,6 @@
     </div>
   </footer>
 
-  <script src="javascript website.js"></script>
+  <script src="errisscript.js"></script>
 </body>
 </html>
