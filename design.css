@@ -25,7 +25,7 @@ body {
   height: 100%;
   background-color: #333;
   z-index: 1000;
-  transition: left 0.3s ease;
+  transition: left 1.2s ease;
   padding-top: 20px;
   box-shadow: 2px 0px rgba(0, 0, 0, 0.5);
 }
@@ -142,7 +142,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 /* h1 styles */
@@ -192,7 +192,7 @@ header.hidden {
   line-height: 1.8;
 }
 
-/* What I Can Do section styles */
+/* what i can do */
 #what-i-can-do {
   padding-left: 50px;
   margin-top: 60px;
@@ -201,9 +201,9 @@ header.hidden {
 
 #what-i-can-do .title {
   font-size: 32px;
-  font-weight: bold; /* Making the title bold */
+  font-weight: bold;
   color: #333;
-  text-align: left; /* Left-align the title */
+  text-align: left;
   margin: 0;
 }
 
@@ -211,8 +211,8 @@ header.hidden {
   font-size: 18px;
   color: #555;
   margin: 20px 0;
-  text-align: justify; /* Justify the text */
-  text-indent: 20px; /* Indent the first line */
+  text-align: justify;
+  text-indent: 20px;
 }
 
 #what-i-can-do ul {
@@ -240,7 +240,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  transition: bottom 0.3s ease-in-out;
+  transition: bottom 1.5s ease-in-out;
   z-index: 1001;
 }
 
@@ -253,7 +253,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Media Queries for Responsiveness */
+/* media responsiveness */
 @media (max-width: 768px) {
   header {
     padding: 30px 0;
