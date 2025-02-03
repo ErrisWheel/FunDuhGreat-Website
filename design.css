@@ -1,13 +1,23 @@
 body {
-  background: linear-gradient(135deg, #ecc9c9, #e5c595, #c5e07a, #a54242);
-  background-attachment: fixed;
-  font-family: 'Roboto', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 300% 300%;
+  animation: gradientShift 8s ease infinite;
   line-height: 1.6;
   margin-bottom: 100px;
   padding-bottom: 80px;
   padding-top: 120px;
+}
+
+@keyframes gradientShift {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 * {
