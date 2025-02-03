@@ -40,4 +40,3 @@ document.addEventListener("click", function(event) {
 document.getElementById("menu-button").addEventListener("click", () => {
     console.log("Menu button clicked!");
 });
-
